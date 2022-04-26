@@ -1,5 +1,4 @@
 
-//movement
 let img = new Image();
 img.src = "https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png";     //needs to be changed to link to our sprite
 img.onload = function() {
@@ -56,13 +55,20 @@ function gameLoop() {
   drawFrame(0, 0, positionX, positionY);
   window.requestAnimationFrame(gameLoop);
 }
+//canvas drawing
+document.addEventListener('DOMContentLoaded', function() {
+  var canvas = document.getElementById("canvas"); 
+  var ctx = canvas.getContext("2d"); 
+  ctx.fillStyle = "green"; 
+  ctx.fillRect(0, 0, 1300, 540); 
+});
 //player stats
 var playerHealth = 100
 var playerMana = 100
 var playerDamage = 10
 var playerClassInt = 0
 var playerName = prompt("Please enter your name")
-var playerClassStr = prompt("What class would you like to choose? Paladin extra health, Mage extra mana, Warrior extra damage")
+var playerClassStr = prompt("What class would you like to choose? Paladin has extra health, Mage has extra mana, and Warrior does extra damage")
 //class selection
 
 if (playerClassStr == "Paladin" == "paladin")
@@ -78,4 +84,4 @@ if (playerClassStr == "Warrior" == "warrior")
   playerClassInt = 3;
   playerClassStr = "Warrior";
   playerDamage =+ 20;
-</script>
+  
