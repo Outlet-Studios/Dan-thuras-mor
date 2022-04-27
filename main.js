@@ -1,4 +1,3 @@
-
 let img = new Image();
 img.src = "https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png";     //needs to be changed to link to our sprite
 img.onload = function() {
@@ -85,3 +84,4 @@ if (playerClassStr == "Warrior" == "warrior")
   playerClassStr = "Warrior";
   playerDamage =+ 20;
   
+//canvas
