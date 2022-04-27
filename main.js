@@ -40,7 +40,6 @@ let positionX = 0;
 let positionY = 0;
 
 function gameLoop() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
   if (keyPresses.w) {
     positionY -= MOVEMENT_SPEED;
   } else if (keyPresses.s) {
