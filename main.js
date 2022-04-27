@@ -56,8 +56,6 @@ function gameLoop() {
 }
 //canvas drawing
 document.addEventListener('DOMContentLoaded', function() {
-  var canvas = document.getElementById("canvas"); 
-  var ctx = canvas.getContext("2d"); 
   ctx.fillStyle = "green"; 
   ctx.fillRect(0, 0, 1300, 540); 
 });
