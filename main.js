@@ -1,11 +1,11 @@
 let img = new Image();
-img.src = "https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png";     //needs to be changed to link to our sprite
+img.src = "https://outlet-studios.github.io/OutletStudios/pixil-frame-0.png";     //needs to be changed to link to our sprite
 img.onload = function() {
   window.requestAnimationFrame(gameLoop);
 };
 
-let canvas = document.querySelector('canvas');
-let ctx = canvas.getContext('2d');
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
 
 const SCALE = 2;
 const WIDTH = 16;
@@ -64,8 +64,7 @@ var playerHealth = 100
 var playerMana = 100
 var playerDamage = 10
 var playerClassInt = 0
-var playerName = prompt("Please enter your name")
-var playerClassStr = prompt("What class would you like to choose? Paladin has extra health, Mage has extra mana, and Warrior does extra damage")
+
 //class selection
 
 if (playerClassStr == "Paladin" == "paladin")
